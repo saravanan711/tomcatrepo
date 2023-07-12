@@ -1,5 +1,8 @@
 ---
-- name: Create a tomcat user
-  shell: /bin/false
-  home: /opt/tomcat
-  state: Present
+- name: create a tomcat user
+  user:
+    name: tomcat
+    shell: /bin/false
+    home: /opt/tomcat
+    state: present
+
