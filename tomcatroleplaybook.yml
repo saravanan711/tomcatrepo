@@ -2,4 +2,4 @@
 - hosts: appservers
   become: yes
   roles:
-   - {role: tomcastinstallrole, when: ansible_os_family=="Debian"}
+   - {role: tomcatinstallrole, when: ansible_os_family=="Debian"}
