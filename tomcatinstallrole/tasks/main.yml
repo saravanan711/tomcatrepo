@@ -1,2 +1,9 @@
 ---
 # tasks file for tomcatinstallrole
+- include_tasks: user.yml
+- include_tasks: javainstall.yml
+- include_tasks: downloadextract.yml
+- include_tasks: permissions.yml
+- include_tasks: ConfiguringAdminUsers.yml
+- include_tasks: tomcatservicefile.yml
+- include_tasks: tomcatstart.yml
