@@ -7,4 +7,9 @@
 - name: copy the tomcat context ile
   template:
     src: templates/tomcatcontext.j2
-    dest: /opt/tomcat/webapps/manager/META-INF/context.xml   
+    dest: /opt/tomcat/webapps/manager/META-INF/context.xml  
+
+- name: copy the tomcat host context ile
+  template:
+    src: templates/tomcathostcontext.j2
+    dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml 
